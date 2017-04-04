@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+
+    <title>SkyFall</title>
+    
+    <style>
+    
+        html, body{
+            background-color: #80f8f1;
+            margin: 0;
+            
+        }
+    
+        #container{
+            width: 100%;
+            height: 10000px;
+            position: relative;
+            margin: auto;
+            padding: 0;
+            border: none;
+        }
+    
+        img{
+            position: absolute;
+        }
+       
+
+        #bottom {
+            border: none;
+        }
+        
+        #LadyInGlass{
+            bottom: 50px;
+            height: 350px;
+            width: auto;
+            left: 40%;
+            right: 60%;
+            border: none;
+            transform: scaleX(-1);
+            z-index: 2;
+        }
+        
+        #Skyer{
+            background-image: url(Skyer.png);
+            height: 9060px;
+            width: 100%;
+        }
+        
+        #FallingLady{
+            left: 45%;
+            right: 55%;
+            height: 280px;
+            width: auto;
+            border: none;
+            /*top: 50%;*/
+            bottom: 50px;
+            position: fixed;
+            z-index: 0;
+        }
+        
+        #Sky{
+            height: auto;
+            width: 100%;
+            overflow: hidden;
+        }
+        
+        #Frosk{
+            height:250px;
+            width: auto;
+            top: 4800px;
+            right: 200px;
+        }
+        
+        #SkyForan{
+            height: 200px;
+            width:auto;
+            left: 40%;
+            right: 60%;
+            top: 3000px;
+            z-index: 1;
+        }
+        
+        #Scene{
+            width: 100%;
+            height: 350px;
+            bottom: 0;
+            z-index: 1;
+        }
+        
+        #PangWrap{
+            height: 380px;
+            width: 380px;
+            border: transparent;
+        }
+    
+        #Pang{
+            bottom: 24px;
+            height: 400px;
+            width: 400px;
+            left: 37%;
+            right: 63%;
+            border: transparent;
+            z-index: 3;
+        }
+        
+        
+        #PangWrap:hover #Pang{
+            display: none;
+        } 
+        
+        /*#Pang:hover #LadyInGlass2{
+            display:block;
+        } */
+        
+        /* Jeg har knota skikkelig for å få vekk den flimringen til eksplosjonen, men jeg får det ikke til...!*/
+        
+    </style>
+    
+    
+</head>
+<body>
+
+    
+    <div id="container">
+        
+        <img id="SkyForan" src="Cloud-Realistic-Drawing.png"/>
+    
+        <img id="Scene" src="scenelav.jpg"/>
+        
+        <img id="FallingLady" src="FallingLady.png"/>
+       
+        <img id="LadyInGlass" src="LadyInGlass.PNG"/>
+      
+        <img id="Sky" src="Cloud-Realistic-Drawing.png"/>
+        
+        <img id="Frosk" src="Frosk.png"/>
+        
+        
+            <div id="Skyer" src="Skyer.png"/> 
+        
+        
+            <div id="PangWrap"/>
+    
+                <img id="Pang" src="Explosion-free-to-use-clip-art.png"/>
+     
+            </div>
+         
+    
+    </div>
+    
+ 
+
+</body>
+</html>
